@@ -1,0 +1,75 @@
+$themes: (
+        default:(
+                //头部导航
+                header-hover-color: #f7f7f7,
+                header-bg-color: #fff,
+                header-text-color: #303133,
+                header-bd-color: #e6e6e6,
+
+                //侧边导航
+                aside-active-color: #ecf5ff,
+                aside-active-text-color: #2d8cf0,
+                aside-hover-color: #f7f7f7,
+                aside-bg-color: #fff,
+                aside-text-color: #303133,
+                aside-bd-color: #e6e6e6,
+
+                //个人中心
+                person-title-color: #2d8cf0,
+        ),
+        dark:(
+                //头部导航
+                header-hover-color: #354E6B,
+                header-bg-color: #354E6B,
+                header-text-color: #ffffff,
+                header-bd-color: #354E6B,
+
+                //侧边导航
+                aside-active-color: #517298,
+                aside-active-text-color: #fff,
+                aside-hover-color: #536477,
+                aside-bg-color: #354E6B,
+                aside-text-color: #fff,
+                aside-bd-color: #e6e6e6,
+
+
+                //个人中心
+                person-title-color: #354E6B
+        ),
+        _blue:(
+                //头部导航
+                header-hover-color: #166de2,
+                header-bg-color: #0A57BE,
+                header-text-color: #ffffff,
+                header-bd-color: #0A57BE,
+
+                //侧边导航
+                aside-active-color: #ecf5ff,
+                aside-active-text-color: #2d8cf0,
+                aside-hover-color: #f7f7f7,
+                aside-bg-color: #fff,
+                aside-text-color: #303133,
+                aside-bd-color: #e6e6e6,
+
+                //个人中心
+                person-title-color: #0A57BE
+        ),
+        _green:(
+                //头部导航
+                header-hover-color: #00AA90,
+                header-bg-color: #00AA90,
+                header-text-color: #ffffff,
+                header-bd-color: #00AA90,
+
+                //侧边导航
+                aside-active-color: #ecf5ff,
+                aside-active-text-color: #00AA90,
+                aside-hover-color: #f7f7f7,
+                aside-bg-color: #fff,
+                aside-text-color: #303133,
+                aside-bd-color: #e6e6e6,
+
+                //个人中心
+                person-title-color: #00AA90
+        ),
+)

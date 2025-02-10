@@ -1,0 +1,335 @@
+@import '~@/assets/css/themeify.scss';
+
+.el-button [class*=iconfont] + span {
+  margin-left: 5px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin:0px;
+  height: 100%;
+  overflow: hidden;
+  .el-scrollbar__wrap {
+    overflow-x: hidden;
+  }
+}
+
+//滚动条样式
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 6px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background: #90939980;
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 0;
+  background: #fff;
+}
+
+//禁止选中
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//不换行
+.nowrap {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+//解决表格复选框对不齐问题
+.el-table .cell, .el-table--border .el-table__cell:first-child .cell {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+//表格行高调整
+.el-table--medium .el-table__cell {
+  padding: 8px 0 !important;
+}
+
+.el-table--small .el-table__cell {
+  padding: 6px 0 !important;
+}
+
+.el-table--mini .el-table__cell {
+  padding: 4px 0 !important;
+}
+
+//logo样式
+.logo {
+  height: 49px;
+  margin-left: 10px;
+  padding: 5px;
+
+  span {
+    font-weight: bold;
+    padding-left: 10px;
+    @include themeify {
+      color: themed('header-text-color');
+    }
+    //height: 59px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+//修改文本框清空按钮偏移问题
+.el-input--mini {
+  .el-input__suffix {
+    margin-top: 2px;
+  }
+}
+
+.el-select--mini {
+  .el-input--mini {
+    .el-input__suffix {
+      margin-top: -2px;
+    }
+  }
+}
+
+.el-input--small {
+  .el-input__suffix {
+    margin-top: 2px;
+  }
+}
+
+.el-select--small {
+  .el-input--small {
+    .el-input__suffix {
+      margin-top: -2px;
+    }
+  }
+}
+
+.el-select--medium {
+  .el-input--medium {
+    .el-input__suffix {
+      margin-top: -3px;
+    }
+  }
+}
+
+//搜索通用样式
+.search {
+
+  //表单每行底部外边距设置
+  .el-form-item {
+    margin-bottom: 10px;
+  }
+
+  .el-select {
+    width: 200px;
+  }
+
+  .el-input {
+    width: 200px;
+  }
+
+  //分割线外边距设置
+  .el-divider--horizontal {
+    margin: 0 0 10px 0;
+  }
+}
+
+//弹出层通用样式
+.el-dialog {
+  overflow-y: hidden !important;
+
+  .el-select {
+    width: 100%;
+  }
+
+  .el-dialog__header {
+    border-bottom: 1px solid;
+    @include themeify {
+      background-color: themed('header-bg-color');
+      border-color: themed('header-bd-color');
+      color: themed('header-text-color');
+    }
+
+    span, i {
+      @include themeify {
+        color: themed('header-text-color');
+      }
+    }
+  }
+
+  .el-dialog__body {
+    padding-bottom: 83px;
+  }
+
+  .el-dialog__footer {
+    border-top: 1px solid #e6e6e6;
+    background-color: #f5f7fa;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+//虚线分割线样式
+.horizontal-line {
+  padding: 10px;
+  border-top: 1px dashed #DCDFE6
+}
+
+//提示文字样式
+.msg {
+  line-height: 20px;
+  font-size: 12px;
+  color: #909399
+}
+
+//页面表单提交和取消按钮样式
+.submit-btn {
+  margin: 30px 120px;
+
+  .el-button {
+    width: 150px;
+  }
+}
+
+//无边框文字按钮
+.danger-btn {
+  color: #f56c6c !important;
+
+  &:hover,
+  &:focus {
+    color: #f78989 !important;
+  }
+
+  &:active {
+    color: #f56c6c !important;
+  }
+}
+
+//一行省略
+.text-flow-ellipsis-multiple_1 {
+  /* 多余内容省略号处理-多行 */
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+//两行省略
+.text-flow-ellipsis-multiple_2 {
+  /* 多余内容省略号处理-多行 */
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+//三行省略
+.text-flow-ellipsis-multiple_3 {
+  /* 多余内容省略号处理-多行 */
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+//四行省略
+.text-flow-ellipsis-multiple_4 {
+  /* 多余内容省略号处理-多行 */
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+//五行省略
+.text-flow-ellipsis-multiple_5 {
+  /* 多余内容省略号处理-多行 */
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+//单行
+.text-flow-ellipsis-single {
+  /* 多余内容省略号处理-单行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+//表单中上传文件组件样式
+.form-upload {
+  display: inline-block;
+  vertical-align: top;
+
+  .el-form-item__error {
+    margin-top: 64px;
+    min-width: 200px;
+  }
+}
+
+//上传图片
+.upload-img {
+  display: inline-block;
+
+  .el-form-item__error {
+    margin-top: 64px;
+    min-width: 200px;
+  }
+}
+
+//拖动上传表单验证样式
+.upload-file {
+  display: inline-block;
+
+  .el-form-item__error {
+    margin-top: 164px;
+    width: 300px;
+  }
+}
+
+//
+.el-tooltip__popper.is-light {
+  border: 1px solid #DCDFE6 !important;
+}
+
+.el-tooltip__popper.is-light[x-placement^=right] .popper__arrow {
+  border-right-color: #DCDFE6 !important;
+}
+
+//缺省文字
+.empty-text {
+  color: #909399;
+  font-size: 12px;
+  margin: 10px 0 10px 20px;
+}

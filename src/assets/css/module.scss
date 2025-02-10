@@ -1,0 +1,58 @@
+.boxwarp{
+ display: flex;
+ align-items: center;
+}
+::v-deep .modulebg .el-input__inner{
+  background-color: #fff;
+}
+::v-deep .modulebggray .el-input__inner{
+  background-color:#e9eef3;
+}
+.isrequired{
+  color: red;
+}
+// 表格选中
+.checksele{
+  border: dashed 1px #409EFF !important;
+  margin: 1px !important;
+  // padding:5px;
+  // z-index:50 !important;
+ }
+
+//  栅格选中
+ .checkselegrid{
+  margin:0px !important; 
+  border: dashed 1px #409EFF !important;
+  margin: 1px !important;
+  
+  // z-index:50 !important;
+}
+//表单选中
+
+.checkselefrom{
+  padding:5px;
+  border: dashed 1px #409EFF !important;
+  margin: 1px !important;
+  // z-index:50 !important;
+}
+.prefix,.suffix{
+ color:#409EFF;
+ margin: 0px 2px;
+}
+.nochecksele{
+  // padding:5px;
+  // border: dashed 1px #c0c4cc;
+}
+.textcontent{
+ font-size: 14px;
+}
+
+// 只读
+
+.el-readonly{
+  pointer-events: none;
+}
+
+.tablebox{
+ margin-bottom:5px;
+}
